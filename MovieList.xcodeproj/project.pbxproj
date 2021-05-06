@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		E437402426443D3200674BB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E437402326443D3200674BB6 /* AppDelegate.swift */; };
-		E437402626443D3200674BB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E437402526443D3200674BB6 /* SceneDelegate.swift */; };
 		E437402826443D3200674BB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E437402726443D3200674BB6 /* ViewController.swift */; };
 		E437402B26443D3200674BB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E437402926443D3200674BB6 /* Main.storyboard */; };
 		E437402D26443D3600674BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E437402C26443D3600674BB6 /* Assets.xcassets */; };
 		E437403026443D3600674BB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E437402E26443D3600674BB6 /* LaunchScreen.storyboard */; };
+		E43740402644407800674BB6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E437403F2644407800674BB6 /* Reachability.swift */; };
+		E4374047264446AF00674BB6 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4374046264446AF00674BB6 /* Movies.swift */; };
+		E437404B2644472A00674BB6 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E437404A2644472A00674BB6 /* MovieService.swift */; };
+		E437405126444D4900674BB6 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E437405026444D4900674BB6 /* MovieViewModel.swift */; };
+		E43740572644502F00674BB6 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43740552644502F00674BB6 /* MovieCell.swift */; };
+		E43740582644502F00674BB6 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E43740562644502F00674BB6 /* MovieCell.xib */; };
+		E437405B264459B600674BB6 /* ImagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E437405A264459B600674BB6 /* ImagesModel.swift */; };
+		E437406026445DC900674BB6 /* UserDefaultHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E437405F26445DC900674BB6 /* UserDefaultHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E437402026443D3200674BB6 /* MovieList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E437402326443D3200674BB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E437402526443D3200674BB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E437402726443D3200674BB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E437402A26443D3200674BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E437402C26443D3600674BB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E437402F26443D3600674BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E437403126443D3600674BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E437403F2644407800674BB6 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		E4374046264446AF00674BB6 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		E437404A2644472A00674BB6 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		E437405026444D4900674BB6 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		E43740552644502F00674BB6 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		E43740562644502F00674BB6 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		E437405A264459B600674BB6 /* ImagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesModel.swift; sourceTree = "<group>"; };
+		E437405F26445DC900674BB6 /* UserDefaultHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,78 @@
 		E437402226443D3200674BB6 /* MovieList */ = {
 			isa = PBXGroup;
 			children = (
+				E437403A26443FFA00674BB6 /* Resources */,
+				E437403B2644401800674BB6 /* Model */,
+				E437403E2644402C00674BB6 /* Service */,
+				E437403D2644402800674BB6 /* ViewModel */,
+				E437403C2644402400674BB6 /* View */,
 				E437402326443D3200674BB6 /* AppDelegate.swift */,
-				E437402526443D3200674BB6 /* SceneDelegate.swift */,
-				E437402726443D3200674BB6 /* ViewController.swift */,
 				E437402926443D3200674BB6 /* Main.storyboard */,
 				E437402C26443D3600674BB6 /* Assets.xcassets */,
 				E437402E26443D3600674BB6 /* LaunchScreen.storyboard */,
 				E437403126443D3600674BB6 /* Info.plist */,
 			);
 			path = MovieList;
+			sourceTree = "<group>";
+		};
+		E437403A26443FFA00674BB6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E437403F2644407800674BB6 /* Reachability.swift */,
+				E437405F26445DC900674BB6 /* UserDefaultHandler.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E437403B2644401800674BB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4374046264446AF00674BB6 /* Movies.swift */,
+				E437405A264459B600674BB6 /* ImagesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E437403C2644402400674BB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E437405426444FFF00674BB6 /* cell */,
+				E437405326444FFC00674BB6 /* viewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E437403D2644402800674BB6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E437405026444D4900674BB6 /* MovieViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E437403E2644402C00674BB6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E437404A2644472A00674BB6 /* MovieService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E437405326444FFC00674BB6 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				E437402726443D3200674BB6 /* ViewController.swift */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		E437405426444FFF00674BB6 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E43740552644502F00674BB6 /* MovieCell.swift */,
+				E43740562644502F00674BB6 /* MovieCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +203,7 @@
 			files = (
 				E437403026443D3600674BB6 /* LaunchScreen.storyboard in Resources */,
 				E437402D26443D3600674BB6 /* Assets.xcassets in Resources */,
+				E43740582644502F00674BB6 /* MovieCell.xib in Resources */,
 				E437402B26443D3200674BB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +215,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4374047264446AF00674BB6 /* Movies.swift in Sources */,
 				E437402826443D3200674BB6 /* ViewController.swift in Sources */,
+				E43740572644502F00674BB6 /* MovieCell.swift in Sources */,
+				E437404B2644472A00674BB6 /* MovieService.swift in Sources */,
 				E437402426443D3200674BB6 /* AppDelegate.swift in Sources */,
-				E437402626443D3200674BB6 /* SceneDelegate.swift in Sources */,
+				E437405B264459B600674BB6 /* ImagesModel.swift in Sources */,
+				E437406026445DC900674BB6 /* UserDefaultHandler.swift in Sources */,
+				E437405126444D4900674BB6 /* MovieViewModel.swift in Sources */,
+				E43740402644407800674BB6 /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
